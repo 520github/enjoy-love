@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="icon" href="http://www.jd.com/favicon.ico" mce_href="http://www.jd.com/favicon.ico" type="image/x-icon">
+    <meta name="description" content="京东众筹为您准备了《》众筹项目，参与《》项目众筹给您不一样的惊喜收货！每天京东众筹一下，收货多多!  更多详情，请登陆京东众筹！">
+    <meta name="Keywords" content=",众筹,京东理财,网上理财,基金理财,金融服务,理财规划,个人理财,家庭理财,投资理财">
+    <title> 京东众筹</title>
+    
+    <script src="/js/lib/upload/jquery.min.js"></script>
+    <script src="/js/lib/upload/jquery.ui.widget.js"></script>
+    <script src="/js/lib/upload/jquery.iframe-transport.js"></script>
+    <script src="/js/lib/upload/jquery.xdr-transport.js"></script>
+    <script src="/js/lib/upload/jquery.fileupload.js"></script>
+    <script src="/js/lib/upload/base.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/lib/upload/zc_proStep.css" media="all">
+</head>    
+<body id="mainframe" class="page-header">
+    <div class="module_con">
+        <div class="module_item" style="padding:30px 0;">
+            <dl>
+                <dt><font color="red" style="font-size: 16px;vertical-align: middle;">* </font>项目图片：</dt>
+                <dd>
+                    <span class="upOuter">
+                        <span>上传项目图片</span>
+                        <input id="upload2" class="fileupload" name="upload2" type="file" data-url="/file/upload/springMultipartRequest" multiple="">
+                    </span>
+                    
+                    <em class="gray">支持jpg、jpeg、png、gif格式，大小：650 X 420px</em>
+                    <input type="hidden" id="projectImage" name="projectImage" value="">
+                </dd>
+                <dd><font color="red" id="err_projectImage"></font></dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd> <img id="pi" src="/image/lib/upload/sl226_170.png" width="495" height="168" title=""></dd>
+                <dd></dd>
+            </dl>
+        </div>
+    </div>
+    <script type="text/javascript">
+    seajs.config({
+        paths : {
+            'project':"http://"+window.location.host+"/js/lib/upload/bs"
+        }
+    });
+    seajs.use("project/init");
+</script>
+</body>
+</html>
