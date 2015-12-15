@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="icon" href="http://www.jd.com/favicon.ico" mce_href="http://www.jd.com/favicon.ico" type="image/x-icon">
+    <!--
+    <link rel="stylesheet" href="/js/lib/uploadify-zc/project.css">
+    -->
+    <meta name="description" content="京东众筹为您准备了《》众筹项目，参与《》项目众筹给您不一样的惊喜收货！每天京东众筹一下，收货多多!  更多详情，请登陆京东众筹！">
+    <meta name="Keywords" content=",众筹,京东理财,网上理财,基金理财,金融服务,理财规划,个人理财,家庭理财,投资理财">
+    <title>uploadify文件上传</title>
+    
+    <style>
+        .form-block{ display: inline-block; vertical-align: middle;}
+        
+        .form-group{position: relative;}
+		.form-group .label{ text-align: right;min-width: 100px;color: #676767;font-size: 14px; display: inline-block;vertical-align: middle;font-weight: lighter;}
+		.form-group .label.prefix{ min-width:132px; text-align: right;}
+		.form-group .label span{color:#ef171c;}
+		
+		.form-group>.form-block{position: relative;}
+		.form-group>.form-block label{min-width:100px;}
+		.form-group>.form-block input{ width: 70%;}
+		
+		.form-group .thumb img{ background:#f2f2f2; height:204px; width:318px; margin:10px 0 0 150px;}
+
+        .uploadify{background:#ec9812;text-align:center;color:white;border-radius:5px;font-weight:bold;}
+        
+    </style>
+    
+    <script src="/js/lib/uploadify-zc/jquery-1.9.1.min.js"></script>
+    <script src="/js/lib/uploadify-zc/jquery.uploadify.min.js"></script>
+    <script src="/js/lib/uploadify-zc/uploadifyFile.js"></script>
+    <script>
+	    $(document).ready(function(){
+	        console.log("init---");
+	        UploadifyFileCommon.uploadOneImage("projectDetailImageUrlFile","projectDetailImageUrlShow",'projectDetailImageUrl',"上传首屏图片");
+	    });
+    </script>
+    
+</head>    
+<body id="mainframe" class="page-header">
+    <div class="form-group">
+		<label class="label prefix" for="projectDetailImageUrl"><span>*</span>项目图片：</label>
+		<div class="form-block upload-file-block">
+			<input type="file" id="projectDetailImageUrlFile" name="projectDetailImageUrlFile" onchange="document.getElementById('textfield').value=this.value" />
+			<input type="hidden" id="projectDetailImageUrl" name="projectDetailImageUrl" value="" />
+		</div>
+		<div class="form-block">
+			  支持jpg、jpeg、png、gif格式，大小：650*420px，最大2m
+		</div>
+		<div class="thumb">
+			<img id="projectDetailImageUrlShow" src="" class="form-control url"/>
+		</div>
+	</div>					
+</body>
+</html>

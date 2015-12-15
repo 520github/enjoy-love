@@ -1,0 +1,96 @@
+.progress{width: 1170px; height: 51px; border: 1px solid #cdcac0; color:#676767;border-radius: 0; box-shadow: none; margin:20px 0; position: relative;}
+.progress label{ font-size: 14px; display: inline-block; width:330px; position: absolute; top:0; height:51px; line-height: 51px; text-align: center; background: url(../images/public/progress_bar_nomal.png) no-repeat left top; background-color: none;}
+.progress label.progress1{left:0; background-position: -35px top;}
+.progress label.progress2{left:265px;}
+.progress label.progress3{left:565px;}
+.progress label.progress4{left:865px;}
+.progress label span{display:table; margin: 0 auto;}
+.progress label.progress1 span{ padding-right:45px;}
+.progress label.start,.progress label.end{ width:22%; background-position: -35px top;}
+.progress label.progress1.curr{ background: url(../images/public/progress_bar_curr.png) no-repeat -35px top; color:white;}
+.progress label.curr{ background: url(../images/public/progress_bar_curr.png) no-repeat left top; background-color: none; color:white; }
+.content_info{width: 1170px;border:1px solid #cdcac0; background: white;margin-bottom:60px;}
+.iden_con_top{height: 50px; line-height: 50px; padding-left: 10px;border-bottom: 1px solid #cdcac0;background-color: #fff;color: #ff5757;}
+.iden_con_top>h2>label{display: inline-block;margin-left: 10px; font-size: 12px;color: #676767;}
+.iden_con_top>h2>label>span{ color:#ff5757;}
+.iden_con_icon1{height: 50px;line-height: 50px;padding-left: 38px;background: url(../images/user_center/per_icon3.png) no-repeat left center;font-size: 16px; font-weight: bold;}
+.info{ padding:40px 0; margin-bottom: 70px;}
+.info .title{ padding: 0 55px; font-size:20px; color:#6b6b6a; margin-bottom: 20px;}
+.group{ padding:0 55px 30px; margin-bottom: 40px; border-bottom:1px dashed #cdcac0;}
+.group.projectGroup .form-group{margin-bottom: 30px;}
+.group.no_btm_line{ border: none; padding-bottom: 10px;}
+.group.last-group{border: none; margin-bottom: 0; padding-bottom: 0;}
+.group.last-group>.form-group{ margin-bottom:15px;}
+.form-block{ display: inline-block; vertical-align: middle;}
+.form-group{position: relative;}
+.form-group .label{ text-align: right;min-width: 100px;color: #676767;font-size: 14px; display: inline-block;vertical-align: middle;font-weight: lighter;}
+.form-group .label.prefix{ min-width:132px; text-align: right;}
+.form-group .label.suffix{ text-align: left;}
+.form-group .label.suffix>.font_color{ color:#a2a2a2;}
+.form-group .label span{color:#ef171c;}
+.form-group .group-radio>label{ display:inline-block;margin-right:10px;}
+.form-group .group-radio>label>input[type="radio"]{ margin-right: 5px;cursor:pointer;}
+.form-group .group-radio>label>span{ padding-right: 10px;}
+.form-group .group-radio>label>img{border:1px solid #cdcac0;}
+.form-group .group-select select{ display: inline-block;}
+.form-group .inline-block{ margin-top: 10px;}
+.uploadify{background:#ec9812;text-align:center;color:white;border-radius:5px;font-weight:bold;}
+.form-group .thumb img{ background:#f2f2f2; height:204px; width:318px; margin:10px 0 0 150px;}
+.form-group .textarea-block{ vertical-align:top;}
+.form-group>.form-block{position: relative;}
+.form-group>.form-block label{min-width:100px;}
+.form-group>.form-block input{ width: 70%;}
+.form-group>.form-block input[type="radio"]{ width:20px; height:20px; padding: 0; margin:0;}
+.form-group>.form-block input[type="text"]{display: inline-block;vertical-align: middle;}
+.form-group>.form-block>.suffix{position:absolute;right:32%;top:0px;min-width:10px;height:34px;line-height:34px;padding:0;text-align:right;}
+.form-group>.form-block .error{color: #ff5757;padding-left:10px;}
+.form-block .radio,.form-block .text{ display: inline-block; vertical-align: middle;}
+.group>.form-group.group-intro{ margin:0px 0 40px;}
+.form-block textarea{ min-height:200px;}
+.vertical-top{ vertical-align:top;}
+.vertical-top.group-radio>label{ margin:0 20px 20px 0;}
+.form-group label.mixlabel{ width:auto; min-width: 20px;color: #676767;font-size: 14px; }
+form .arrow_left{ margin:0; display: block;}
+.box{ border:1px solid #f9eed1; background: #fffef6; padding:0 27px 23px; border-radius: 5px; /* margin-bottom: 20px; */}
+.box h3{ font-size: 14px;color:#676767; font-weight: bold; margin:23px 0 15px;}
+.box p.font-red{ color:#ef171c;}
+.btn_container{text-align: center; margin-top: 30px;}
+.form-group .info-group label.label_info{ text-align: left;}
+.wrap-form-group .label,.wrap-form-group .form-block{ vertical-align: top;}
+.wrap-form-group .form-block label,.wrap-form-group .form-block .form-block{ display: block; margin-bottom: 10px;}
+.sub-form-group{ margin-top: 20px;}
+.sub-form-group .form-group .label{ text-align: right;min-width: 100px;color: #676767;font-size: 14px; display: inline-block;vertical-align: middle;font-weight: lighter;}
+.sub-form-group .form-group .label.prefix{ min-width:150px; text-align: right;}
+.sub-form-group .form-group .label.suffix>.font_color{ color:#a2a2a2;}
+.sub-form-group .form-group .label span{color:#ef171c;}
+.sub-form-group .form-group .form-block{ display: inline-block; vertical-align: middle;}
+.table-group table{font-size: 12px; border: 1px solid #ebc45f;}
+.table-group table tr td,.table-group table tr th{border: none; border-bottom: 1px solid #ebc45f; vertical-align: middle; text-align: left;}
+.table-group table th{height: 40px; background-color: #ebc45f; color: #fff; font-weight: 600; text-align: center;}
+.table-group table tr td a{color: #ef171c;}
+.price-group{text-align: right; font-size: 14px;}
+.price-group span{color:#ef171c; font-weight:bold; font-size: 18px;}
+
+/* btn style */
+form .submit-btn,form .btn{ margin: 0 auto; display: table;background:#ec9812; border:none; color:white; border-radius: 5px;}
+a.btn{ display: inline-block;margin: 0 10px;}
+form .btn:hover{background:#ec9812; border:none; color:white;}
+a.btn.overview{ border:1px solid #ebc45f; color:#676767; background: white;}
+a.btn.overview:hover{ border:1px solid #ebc45f; color:#676767; background: white;}
+.btn_container>.btn{ height: 50px; line-height: 50px; padding: 0;}
+.btn.disable{ background:#b7b7b7;}
+.btn.disable:hover{background:#b7b7b7;}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.fail_btn a.btn{background-color: #ec9812; color: #fff;}
+
+/* 发起项目-完成 */
+.pro_suc{ margin-bottom: 58px; color: #676767;}
+.suc_body{width: 500px; height: 210px; margin: 120px auto 80px;}
+.suc_body .suc_img{width: 100px; height: 100px; margin-right: 24px;}
+.suc_body .suc_text{padding-top: 20px; margin-bottom: 44px;}
+.suc_body .suc_text h3{font-size: 26px; margin-bottom: 4px;}
+.suc_body .suc_b{text-align: center; margin-top: 46px; padding-left: 36px;}
+.suc_body .form-group input{ width: 188px; height: 50px;background-color: #ec9812;border: 1px solid #ec9812; margin: 0 14px; font-size: 20px;}
+.suc_body .form-group input.btn1{width: 158px; background-color: #fff;  color: #676767; }
+
