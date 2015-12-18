@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="icon" href="http://www.jd.com/favicon.ico" mce_href="http://www.jd.com/favicon.ico" type="image/x-icon">
+    <meta name="description" content="京东众筹为您准备了《》众筹项目，参与《》项目众筹给您不一样的惊喜收货！每天京东众筹一下，收货多多!  更多详情，请登陆京东众筹！">
+    <meta name="Keywords" content=",众筹,京东理财,网上理财,基金理财,金融服务,理财规划,个人理财,家庭理财,投资理财">
+    <title>显示图片验证码</title>
+    <script src="/js/lib/upload/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $('.newImgCode').click(function(){
+                $('#newImgCode').attr('src','/image/code/getImageCode?dateTag=' + new Date().getTime());
+            });
+       });
+    </script>
+</head>    
+<body id="mainframe" class="page-header">
+    <div class="module_con">
+        <img src="/image/code/getImageCode" width="102" height="31" id="newImgCode" class="newImgCode">
+        <a href="javascript:;" class="newImgCode">换一张</a>
+    </div>
+</body>
+</html>
