@@ -22,6 +22,8 @@ import com.enjoy.love.controller.BaseController;
 @RequestMapping("/email")
 public class EmailController extends BaseController {
 	@Autowired
+	private EmailUtil emailUtil;
+	@Autowired
 	private EmailVelocityTemplate emailVelocityTemplate;
 	@Autowired
 	private JavaMailSender javaMailSender;
@@ -32,7 +34,7 @@ public class EmailController extends BaseController {
 		Map<String, Object> model = new HashMap<String, Object>();
 		model.put("time", new Date());
 		model.put("message", "this is register email");
-		javaMailSender.send(EmailUtil.getMimeMessageHelperTemplate(javaMailSender.createMimeMessage()).text(emailVelocityTemplate.getEmailRegisterTemplateValue(model)).getMimeMessage());
+		javaMailSender.send(emailUtil.getMimeMessageHelperTemplate(javaMailSender.createMimeMessage()).text(emailVelocityTemplate.getEmailRegisterTemplateValue(model)).getMimeMessage());
 		//javaMailSender.send(EmailUtil.getSimpleMailMessage().text(emailVelocityTemplate.getEmailRegisterTemplateValue(model)));
 		return ResponseObject.success("发送成功");
 	}
@@ -43,7 +45,7 @@ public class EmailController extends BaseController {
 		Map<String, Object> model = new HashMap<String, Object>();
 		model.put("time", new Date());
 		model.put("message", "this is register email");
-		javaMailSender.send(EmailUtil.getSimpleMailMessage().text(emailVelocityTemplate.getEmailRegisterTemplateValue(model)));
+		javaMailSender.send(emailUtil.getSimpleMailMessage().text(emailVelocityTemplate.getEmailRegisterTemplateValue(model)));
 		return ResponseObject.success("发送成功");
 	}
 }
