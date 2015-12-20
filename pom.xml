@@ -11,6 +11,10 @@
 		<version>1.2.5.RELEASE</version>
   </parent>
   
+  <properties>
+      <shiro.version>1.2.4</shiro.version>
+  </properties>
+  
   <dependencies>
   	<dependency>
   		<groupId>org.springframework.boot</groupId>
@@ -31,11 +35,12 @@
 		<artifactId>spring-boot-starter-tomcat</artifactId>
 		<scope>provided</scope>
 	</dependency>
-	
+	<!--  
 	<dependency>
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-starter-security</artifactId>  
     </dependency>  
+	-->
 	
 	<dependency>
 		<groupId>org.springframework</groupId>
@@ -112,8 +117,34 @@
 	    <systemPath>${project.basedir}/lib/json.jar</systemPath>
 	</dependency>
 	
+	<dependency>  
+	    <groupId>org.apache.shiro</groupId>  
+	    <artifactId>shiro-core</artifactId>  
+	    <version>${shiro.version}</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>org.apache.shiro</groupId>  
+	    <artifactId>shiro-web</artifactId>  
+	    <version>${shiro.version}</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>org.apache.shiro</groupId>  
+	    <artifactId>shiro-spring</artifactId>  
+	    <version>${shiro.version}</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>org.apache.shiro</groupId>  
+	    <artifactId>shiro-ehcache</artifactId>  
+	    <version>${shiro.version}</version>  
+	</dependency>  
+	
   </dependencies>
   
-  
+  <repositories>
+       <repository>
+           <id>spring-snapshots</id>
+           <url>http://repo.spring.io/libs-snapshot</url>
+       </repository>
+   </repositories>
   
 </project>
