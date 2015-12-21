@@ -9,11 +9,11 @@ import org.springframework.util.StringUtils;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 
-@Configuration
-@ComponentScan
+//@Configuration
+//@ComponentScan
 public class PersistenceContext {
 	
-	@Bean
+	//@Bean
 	public DataSource dataSource() {
 		BoneCPDataSource dataSource = new BoneCPDataSource();
 		dataSource.setDriverClass(getEnv("db.driver", "org.h2.Driver"));

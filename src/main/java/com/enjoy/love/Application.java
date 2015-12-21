@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,17 +14,22 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
 import com.enjoy.love.common.email.EmailUtil;
+import com.enjoy.love.thirdparty.weixin.js.config.WeiXinJsConfig;
 import com.jolbox.bonecp.BoneCPDataSource;
 
 //@SpringBootApplication
 @Configuration
 @ComponentScan(basePackages={"com.enjoy.love"})
 @EnableAutoConfiguration
+//@EnableConfigurationProperties({WeiXinJsConfig.class})
 public class Application {
 	
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(Application.class, args);
 		String id = applicationContext.getId();
+		WeiXinJsConfig wjc = applicationContext.getBean(WeiXinJsConfig.class);
+		//WeiXinJsConfig wjc = new WeiXinJsConfig();
+		System.out.println("id--->"  + wjc.getId());
 		System.out.println("id--->" + id);
 	}
 	
