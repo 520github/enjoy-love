@@ -48,6 +48,10 @@ public class BaseTest {
 		return UUID.randomUUID().toString();
 	}
 	
+	protected String getRandomStringAndReplace() {
+		return this.getRandomString().replaceAll("-", "");
+	}
+	
 	protected BigDecimal getRandomBigDecimal() {
 		return new BigDecimal(100);
 	}
