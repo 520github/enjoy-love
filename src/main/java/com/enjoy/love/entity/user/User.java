@@ -2,6 +2,7 @@ package com.enjoy.love.entity.user;
 
 import java.util.Random;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,8 +16,10 @@ public class User extends BaseEntity {
 	@Id
 	private Integer userId;
 	/** 用户名  **/
+	@Column(nullable=false)
 	private String userName;
 	/** 登录密码 **/
+	@Column(nullable=false)
 	private String loginPassword;
 	
 	public Integer getUserId() {
