@@ -13,6 +13,7 @@
   
   <properties>
       <shiro.version>1.2.4</shiro.version>
+      <rocketmq.version>3.2.6</rocketmq.version>
   </properties>
   
   <dependencies>
@@ -143,6 +144,28 @@
 	    <artifactId>shiro-ehcache</artifactId>  
 	    <version>${shiro.version}</version>  
 	</dependency>  
+	
+	<!-- rocketmq -->
+	<dependency>
+		<groupId>com.alibaba.rocketmq</groupId>
+		<artifactId>rocketmq-client</artifactId>
+		<version>${rocketmq.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.alibaba.rocketmq</groupId>
+		<artifactId>rocketmq-common</artifactId>
+		<version>${rocketmq.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.alibaba.rocketmq</groupId>
+		<artifactId>rocketmq-tools</artifactId>
+		<version>${rocketmq.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.alibaba.rocketmq</groupId>
+		<artifactId>rocketmq-remoting</artifactId>
+		<version>${rocketmq.version}</version>
+	</dependency>
 	
   </dependencies>
   
