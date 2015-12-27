@@ -9,7 +9,7 @@ import javax.persistence.PreUpdate;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity extends BaseModel {
 	private Date createDate;
 	private Date modifyDate;
 	
@@ -43,9 +43,5 @@ public class BaseEntity {
 	
 	private Date getCurrentDate() {
     	return new Date();
-    }
-	
-	public String toString(){
-        return ToStringBuilder.reflectionToString(this);
     }
 }
