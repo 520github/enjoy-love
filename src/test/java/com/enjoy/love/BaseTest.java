@@ -21,6 +21,11 @@ public class BaseTest {
 		System.out.println(message);
 	}
 	
+	protected static void printStatic(String format, Object... obj) {
+		String message =  MessageFormatter.arrayFormat(format, obj).getMessage();
+		System.out.println(message);
+	}
+	
 	protected String toJson(Object obj) {
 		if(obj == null) {
 			return null;
