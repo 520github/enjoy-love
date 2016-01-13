@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import com.enjoy.love.BaseTest;
 import com.enjoy.love.common.encrypt.MessageDigestEncrypt;
+import com.enjoy.love.common.encrypt.ucf.Base64;
 
 /**
  * @author lenovo
@@ -24,8 +25,9 @@ public class MessageDigestEncryptTest extends BaseTest {
 	public static void beforeClass() {
 		try {
 			String source = "miaoxuehui19850425";
-			bytes = MessageDigestEncrypt.sha1BytesByMessageDigest(source);
+			//bytes = MessageDigestEncrypt.sha1BytesByMessageDigest(source);
 			//bytes = MessageDigestEncrypt.md5BytesByMessageDigest(source);
+			bytes = source.getBytes();
 			printStatic("bytes length is {}", bytes.length);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,6 +50,38 @@ public class MessageDigestEncryptTest extends BaseTest {
 		try {
 			String result = MessageDigestEncrypt.base64EncodeByEncodeChar(bytes);
 			this.print("base64EncodeByEncodeCharTest result is {}", result);
+		} catch (Exception e) {
+			this.fail(e);
+		}
+	}
+	
+	@Test
+	public void base64EncodeTest() {
+		try {
+			String result = Base64.encodeBase64String(bytes);
+			this.print("base64EncodeTest result is {}", result);
+		} catch (Exception e) {
+			this.fail(e);
+		}
+	}
+	
+	@Test
+	public void decryptBASE64Test() {
+		try {
+			String data = Base64.encodeBase64String(bytes);
+			byte result[] = MessageDigestEncrypt.decryptBASE64(data);
+			this.print("decryptBASE64Test result is {}", new String(result));
+		} catch (Exception e) {
+			this.fail(e);
+		}
+	}
+	
+	@Test
+	public void decodeTest() {
+		try {
+			String data = Base64.encodeBase64String(bytes);
+			byte result[] = MessageDigestEncrypt.decode(data);
+			this.print("decodeTest result is {}", new String(result));
 		} catch (Exception e) {
 			this.fail(e);
 		}
